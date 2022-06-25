@@ -1,0 +1,239 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html>
+  <head>
+    <SCRIPT LANGUAGE="JavaScript">
+<!-- Beginning of JavaScript -
+
+function MsgBox (textstring) {
+alert (textstring) }
+
+// - End of JavaScript - -->
+    </SCRIPT></HEAD>
+      <link rel="stylesheet" href="./style.css">
+
+<body>
+<section>
+  <nav id="navbar">
+  <header>TOPICS</header>
+                <ul>
+                    <a class="nav-link" href="#ux_design" rel="internal">
+                        <li>UX Design</li>
+                    </a>
+                    <a class="nav-link" href="#HTML" rel="internal">
+                        <li>HTML</li>
+                    </a>
+                    <a class="nav-link" href="#CSS" rel="internal">
+                        <li>CSS</li>
+                    </a>
+                    <a class="nav-link" href="#javascript" rel="internal">
+                        <li>Javascript</li>
+                    </a>
+                    <a class="nav-link" href="#responsive_web_design" rel="internal">
+                        <li>Responsive Web Design</li>
+                    </a>
+    </ul></nav></section>
+  <header id="title">
+    <h1>UX Design Basics</h1>
+  </header>
+    <main id="main-doc">
+      <section class="main-section" id="ux_design">
+        <header>
+          <h2>UX Design</h2>
+        </header>
+        <article>
+          <p>User experience design is the process of enhancing user satisfaction with a product by improving the usability, accessibility, and satisfaction provided in the interaction with the product. The same way the internet connects us, there are web
+            languages that work together to make up the internet and the websites it contains. HTML, CSS and JavaScript work together to form the front-end design of a website by applying information that affects content, style and interactivity of a
+            site.<br><br> Being a UX Designer means you need to demonstrate your design skills visually, and knowing front-end web development can be a part of that process. The basics of front-end web development are HTML, CSS, and JavaScript code. This code
+controls what a user sees and interacts with on a website. Since front-end developers code websites using the building blocks of HTML, CSS, and JavaScript, having a good understanding of front-end coding can help you communicate better with developers. Additionally, it can potentially eliminate time spent making revisions. By developing a basic understanding of how to code, you are cognizant of the impact your decisions are making on your designs, and how interactions are meaningful for the end user. In the end, it can speed up the product development process.</p>
+
+         <section class="main-section" id="HTML">
+        <header>
+     <h2>HTML</h2>
+        </header> 
+          <p>Short for HyperText Markup Language, HTML is the language used to create documents on the World Wide Web. HTML defines the structure and layout of a Web document by using a variety of tags and attributes.</p><p>Some HTML Element Definitions</p>
+           <Li>The &lts!DOCTYPE html&gt declaration defines this document to be HTML5</li>
+           <li>The &ltHTML&gt element is the root element of an HTML page</li>
+           <li>The &lthead&gt element contains meta information about the document</li>
+           <li>The &lttitle&gt element specifies a title for the document</li>
+           <li>The &ltmeta&gt element should define the character set to be UTF-8</li>
+<li>The &ltmeta&gt element with name="viewport" makes the website look good on all devices and screen resolutions</li>
+<li>The &ltstyle&gt element contains the styles for the website (layout/design)</li>
+<li>The &ltbody&gt element contains the visible page content</li>
+           <li>The &lth1&gt element defines a large heading</li>
+<li>The &ltp&gt element defines a paragraph</li>
+
+        <section class="main-section" id="CSS">
+        <header>
+     <h2>CSS</h2>
+        </header>  
+            <p>CSS is essentially like the drapes to your window. You've laid the groundwork for the window frame with html, and CSS comes along to add some panache to your room.</p>
+              <p>While HTML is used to create the actual content of the page, such as written text - like you are reading now - CSS (cascading style sheets) is responsible for the design or style of the website, which can describe the presentation of a web
+                page, including colors, layout, and fonts. <br><br>CSS can be added to HTML elements in 3 ways:
+
+                <li>Inline by using the style attribute in HTML elements</li>
+                <li>Internally by using a &ltstyle&gt element in the &lthead&gt</li> section
+                <li>Externally by using an external CSS file</li>
+          <p>An <b>inline CSS</b> is used to apply a unique style to a single HTML element. An inline CSS uses the style attribute of an HTML element.</p>
+
+                This example sets the text color of the &lth1&gt element to red:
+                <pre><code> &lth1 style style="color:red;"&gtThis is a Red Heading&lth1/&gt</code></pre>
+              </p>
+        <p>The result is:</p>
+              <h3 style="color:red;">This is a Red Heading</h3>
+
+           <p>An <b>internal CSS</b> is used to define a style for a single HTML page. An internal CSS is defined in the &lthead&gt section of an HTML page, within a &ltstyle&gt element:</p>
+              <pre>
+    <code>
+      <!-- your code here --><!DOCTYPE html>
+&lthtml&gt
+&lthead&gt
+&ltstyle&gt
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+&lt/style&gt
+&lt/head&gt
+&ltbody&gt
+
+&lth1&gtThis is a heading&lt/h1&gt
+&ltp&gtThis is a paragraph.&lt/p&gt
+
+&lt/body&gt
+&lt/html&gt
+    </code>
+  </pre>
+
+           <p>With an <b>external style sheet</b>, you can change the look of an entire web site, by changing one file! To use an external style sheet, add a link to it in the &lthead&gt section of the HTML page, like this:</p>
+              <pre>
+    <code>
+      <!-- your code here -->
+     &ltlink rel="stylesheet" href="styles.css"&gt
+    </code>
+  </pre>
+            <section class="main-section" id="javascript">
+        <header>
+          <h2>Javascript</h2>
+        </header>
+        <article>
+          <p>JavaScript enhances static web pages by providing dynamic elements that can adapt and react to user action. It's a need-to-know tool for aspiring web designers, but anyone can benefit from understanding this core development language, especially UX Designers. </p>
+            
+          <p><b>A Dynamic Message Box Using Javascript</b></p>
+
+<p>Below is a simple script that opens up an alert message box which displays whatever is typed in the form box.</p>
+<pre><code>
+&ltHTML&gt
+&ltHEAD&gt
+&ltSCRIPT LANGUAGE="JavaScript"&gt
+<!-- Beginning of JavaScript -
+
+function MsgBox (textstring) {
+alert (textstring) }
+
+// - End of JavaScript - -->
+&lt/SCRIPT&gt
+
+&lt/HEAD&gt
+
+
+
+&ltBODY&gt
+&ltFORM&gt
+&ltINPUT NAME="text1" TYPE=Text&gt
+&ltINPUT NAME="submit" TYPE=Button VALUE="Show Me" onClick="MsgBox(form.text1.value)"&gt
+&lt/FORM&gt
+
+&lt/BODY&gt
+&lt/HTML&gt
+</code></pre>
+          
+          <p> Here is the script in action:</p>
+          <p>Type something in the box, then click on the "Display" button.</p>
+          <FORM>
+<INPUT NAME="text1" TYPE=Text>
+<INPUT NAME="submit" TYPE=Button VALUE="Display" onClick="MsgBox(form.text1.value)">
+</FORM
+          <article>
+      </section>     
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+<section class="main-section" id="responsive_web_design">
+        <header>
+          <h2>Responsive Web Design</h2>
+        </header>
+    <p>Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.</p>
+<p>These days we use any number of computers, phones, and tablets to look at web pages. CSS allows a designer to adapt the presentation to different types of devices, such as large computer monitors or small handheld devices like smart phones.<br><br>
+                In this case, media queries are useful when you want to modify your site or app depending upon a device's general type or specific characteristics and parameters. The media query below adjusts parameters for browser viewport width. <br> <br>               Adjusting design for the width of the viewport can be executed with the following media queries. Additionally, many media features are range features, which means they can be prefixed with "min-" or "max-" to express "minimum condition" or "maximum condition" constraints.</p>
+  <p><b>Media Queries in Action</b></p>       <p> Using a min-width media query is designing with a mobile first approach.</p>
+              <pre>
+    <code>
+      <!-- your code here -->
+body {
+    /* default styles here, 
+       targets mobile first */
+}
+
+@media screen and (min-width:480px) {
+    /* style changes when the screen gets larger */
+}
+
+@media screen and (min-width:800px) {
+        /* And even larger */
+    }
+    </code>
+  </pre>
+              <p> Whereas a max-width media query would be used if the sites you are working on are designed for desktop first, then adds queries to make styles mobile-friendly.</p>
+              <pre>
+    <code>
+      <!-- your code here -->
+
+
+body {
+        /* default styles here, 
+           targets desktops first */
+    }
+
+@media screen and (max-width:800px) {
+    /* style changes when the screen gets smaller */
+}
+
+@media screen and (max-width:480px) {
+        /* And even smaller */
+    }
+    </code>
+  </pre>
+              <p>If you want your styles to affect specific criteria, you can just combine the two like below:</p>
+
+              <pre><code> body {
+        /* default styles here, 
+           targets mobile first
+           ALSO will cover 361 - 479 width */
+    }
+
+@media screen and (max-width:360px) {
+    /* style ONLY for screens with 360px or less width */
+}
+
+@media screen and (min-width:480px) {
+    /* style changes when the screen gets larger */
+       }</code></pre>
+
+        </article>
+      </section>
+
+    </main>
+
+</section>
+ 
+
+</body>
+
+</html>
